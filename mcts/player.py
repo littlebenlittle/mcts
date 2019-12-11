@@ -19,3 +19,9 @@ class UCTPlayer:
     @property
     def game_states(self):
         return self._states
+
+    def expand(self, node):
+        assert isinstance(node, GameNode)
+        node.expand()
+        for s in node.successors:
+            self._graph.nodes.append(s)
