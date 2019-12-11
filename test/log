@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
+rootdir: /home/ben/mcts
+collected 1 item
+
+test/test_player.py E                                                    [100%]
+
+==================================== ERRORS ====================================
+______________________ ERROR at setup of test_uct_player _______________________
+
+    @fixture
+    def uct_player():
+>       from mcts.player import UCTPlayer
+E       ModuleNotFoundError: No module named 'mcts.player'
+
+test/test_player.py:6: ModuleNotFoundError
+=============================== 1 error in 0.02s ===============================
